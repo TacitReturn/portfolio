@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'GR Portfolio') }}</title>
+    <title>GR Portfolio</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
