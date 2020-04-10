@@ -1,1 +1,4 @@
-INDEX PAGE
+@extends('layouts.app')
+
+@section('content')
+@endsection
