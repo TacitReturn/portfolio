@@ -9,6 +9,12 @@ class PagesController extends Controller
     // Index Method
     public function index() {
         
-        return view('index');
+        return view('pages/index');
     }
+
+    // Resume Method
+    public function resume() {
+        return view('pages/resume');
+    }
+
 }
