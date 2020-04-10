@@ -37,16 +37,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <!-- Left Side Of Navbar -->
                 <ul class="navbar-nav mr-auto">
-                    // Home link
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('index')}}">Home</a>
                     </li>
-                    // Projects link
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{route('projects')}}">Projects</a>
-                    </li>
                     <!-- Button trigger modal -->
-                    // Resume link (modal)
                     <li class="nav-item">
                         <a type="button" class="nav-link" data-toggle="modal" data-target="#fullHeightModalRight">
                             Resume
