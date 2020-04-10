@@ -11,10 +11,4 @@ class PagesController extends Controller
 
         return view('pages.index');
     }
-
-    // Resume Method
-    public function resume() {
-        return view('pages.resume');
-    }
-
 }
