@@ -1,8 +1,10 @@
 @component('mail::message')
     # Thank you for contact me,
+    I'll try my best to get back to you in 2 - 3 business days excluding Saturdays.
 
-    <strong>Name:</strong> {{$data['name']}}
-    <strong>Email:</strong> {{$data['email']}}
-    <strong>Subject:</strong> {{$data['subject']}}
-    <strong>Message:</strong> {{$data['message']}}
+    Name:{{$data['name']}}
+    Email: {{$data['email']}}
+    Subject: {{$data['subject']}}
+    Message: {{$data['message']}}
+
 @endcomponent
