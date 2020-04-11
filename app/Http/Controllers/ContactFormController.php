@@ -11,6 +11,13 @@ class ContactFormController extends Controller
         return view('contact.create');
     }
     public function store() {
+
+        $data = request()->validate([
+            'name' => 'required|min:3',
+            'email' => 'required|email',
+            'subject' => 'required|min:10',
+            'message' => 'required|min:50',
+        ]);
         dd(request()->all());
     }
 }
