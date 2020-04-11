@@ -1,6 +1,4 @@
 @component('mail::message')
-    # Thanks for contacting me,
-
     I'll try my best to get back to you in 2-3 business days (excluding Saturday).
 
     If you'd like to view some of the code I'm currently working on, you can get a more in dept
@@ -10,4 +8,7 @@
     @component('mail::button', ['url' => 'https://github.com/TacitReturn'])
         GitHub Profile
     @endcomponent
+
+    Thanks,<br>
+    {{ config('app.name') }}
 @endcomponent
