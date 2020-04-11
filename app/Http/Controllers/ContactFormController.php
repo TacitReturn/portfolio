@@ -21,6 +21,6 @@ class ContactFormController extends Controller
             'message' => 'required|min:50',
         ]);
 
-        Mail::to('test@test.com')->send(new ContactFormMail());
+        Mail::to('test@test.com')->send(new ContactFormMail($data));
     }
 }

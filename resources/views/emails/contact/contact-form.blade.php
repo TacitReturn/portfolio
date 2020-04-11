@@ -1,14 +1,8 @@
 @component('mail::message')
-    I'll try my best to get back to you in 2-3 business days (excluding Saturday).
+    # Thank you for contact me,
 
-    If you'd like to view some of the code I'm currently working on, you can get a more in dept
-    look on my GitHub profile, I update projects there more frequently before they're pushed to
-    my portfolio.
-
-    @component('mail::button', ['url' => 'https://github.com/TacitReturn'])
-        GitHub Profile
-    @endcomponent
-
-    Thanks,<br>
-    {{ config('app.name') }}
+    <strong>Name:</strong> {{$data['name']}}
+    <strong>Email:</strong> {{$data['email']}}
+    <strong>Subject:</strong> {{$data['subject']}}
+    <strong>Message:</strong> {{$data['message']}}
 @endcomponent
