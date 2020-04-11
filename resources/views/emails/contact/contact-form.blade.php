@@ -9,15 +9,5 @@
     @component('mail::button', ['url' => 'https://github.com/TacitReturn'])
         GitHub Profile
 
-    @endcomponent@component('mail::button', ['url' => 'https://www.linkedin.com/in/glenn-rudge/'])
-        LinkedIn Profile
     @endcomponent
-
-    Thanks,<br>
-    Glenn Rudge
-    GlennRudge@outlook.com
-    Miami, Florida 33179
-    1-305-904-1725
-    Hephaestus-Solutions.com
-    {{ config('app.name') }}
 @endcomponent
