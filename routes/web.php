@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'PagesController@index')->name('index');
-Route::get('/resume', 'PagesController@resume')->name('resume');
-Route::get('/contact', 'PagesController@contact')->name('contact');
+Route::get('resume', 'PagesController@resume')->name('resume');
+Route::get('contact', 'ContactFormController@create')->name('contact-me');
 
 Auth::routes();
 
