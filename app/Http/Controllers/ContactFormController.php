@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactFormMail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class ContactFormController extends Controller
 {
@@ -18,6 +20,7 @@ class ContactFormController extends Controller
             'subject' => 'required|min:10',
             'message' => 'required|min:50',
         ]);
-        dd(request()->all());
+
+        Mail::to('test@test.com')->send(new ContactFormMail());
     }
 }
