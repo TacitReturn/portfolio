@@ -22,5 +22,7 @@ class ContactFormController extends Controller
         ]);
 
         Mail::to('test@test.com')->send(new ContactFormMail($data));
+
+        return view('index')->with('success', 'Message received successfully');
     }
 }
