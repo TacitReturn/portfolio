@@ -23,6 +23,6 @@ class ContactFormController extends Controller
 
         Mail::to('test@test.com')->send(new ContactFormMail($data));
 
-        return redirect('contact')->with('success', 'Message received successfully');
+        return redirect('contact')->with('success', "Message received successfully, I'll get back to you in 2 - 3 business days (excluding Saturday).");
     }
 }
