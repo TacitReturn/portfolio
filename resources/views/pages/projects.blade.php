@@ -9,7 +9,7 @@
 
             <!--Card image-->
             <div class="view overlay">
-                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg"
+                <img class="card-img-top" src="https://hephaestus-solutions.com/projects/img/portfolio.png"
                      alt="Card image cap">
                 <a href="#!">
                     <div class="mask rgba-white-slight"></div>
