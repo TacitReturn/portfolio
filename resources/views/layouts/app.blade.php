@@ -50,7 +50,7 @@
                         <a class="nav-link" href="{{route('index')}}">Home</a>
                     </li>
                     <li class="nav-item {{Route::is('projects') ? 'active' : ''}}">
-                        <a class="nav-link" href="{{route('project')}}">Home</a>
+                        <a class="nav-link" href="{{route('projects')}}">Home</a>
                     </li>
                     <!-- Button trigger modal -->
                     <li class="nav-item">
