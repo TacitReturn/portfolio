@@ -11,4 +11,8 @@ class PagesController extends Controller
 
         return view('pages.index');
     }
+    // Projects Method
+    public function projects() {
+        return view('projects');
+    }
 }

@@ -22,7 +22,7 @@
 {{--    <!-- Scripts -->--}}
 {{--    <script src="{{ asset('js/app.js') }}" defer></script>--}}
 
-    <!-- Fonts -->
+<!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
@@ -48,6 +48,9 @@
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item {{Route::is('index') ? 'active' : ''}}">
                         <a class="nav-link" href="{{route('index')}}">Home</a>
+                    </li>
+                    <li class="nav-item {{Route::is('projects') ? 'active' : ''}}">
+                        <a class="nav-link" href="{{route('project')}}">Home</a>
                     </li>
                     <!-- Button trigger modal -->
                     <li class="nav-item">
