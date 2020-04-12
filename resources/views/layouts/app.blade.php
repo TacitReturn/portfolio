@@ -46,7 +46,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <!-- Left Side Of Navbar -->
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
+                    <li class="nav-item {{Route::is('index') ? 'active' : ''}}">
                         <a class="nav-link" href="{{route('index')}}">Home</a>
                     </li>
                     <!-- Button trigger modal -->
@@ -174,7 +174,7 @@
                         </div>
                     </li>
                     <!-- Full Height Modal Right -->
-                    <li class="nav-item">
+                    <li class="nav-item {{Route::is('contact-me') ? 'active' : ''}}">
                         <a class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
