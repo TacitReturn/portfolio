@@ -34,8 +34,9 @@
                     <li class="list-group-item">Heroku</li>
                 </ul>
                 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                <button type="button" class="btn btn-light-blue btn-md">Read more</button>
-                <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+                <a href="{{route('index')}}" type="button" class="btn btn-danger btn-md">Live Preview</a>
+
+                <a target="_blank" href="https://github.com/TacitReturn/Portfolio" type="button" class="btn btn-primary">Repository</a>
 
             </div>
 
