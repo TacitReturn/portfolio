@@ -92,7 +92,7 @@
                                             </li>
 
                                             <li class="list-group-item">
-                                                JavaScript
+                                                JavaScript{{Route::is('index') ? 'active' : ''}}
                                             </li>
                                         </ul>
 
@@ -175,7 +175,7 @@
                     </li>
                     <!-- Full Height Modal Right -->
                     <li class="nav-item {{Route::is('contact-me') ? 'active' : ''}}">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="{{route('contact-me')}}">Contact</a>
                     </li>
                 </ul>
 
