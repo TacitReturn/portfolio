@@ -13,6 +13,6 @@ class PagesController extends Controller
     }
     // Projects Method
     public function projects() {
-        return view('projects');
+        return view('pages.projects');
     }
 }
