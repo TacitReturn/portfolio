@@ -9,7 +9,7 @@
 
             <!--Card image-->
             <div class="view overlay">
-                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg"
+                <img class="card-img-top" src="https://hephaestus-solutions.com/projects/img/portfolio.png"
                      alt="Card image cap">
                 <a href="#!">
                     <div class="mask rgba-white-slight"></div>
@@ -36,70 +36,71 @@
                 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
                 <a href="{{route('index')}}" type="button" class="btn btn-danger btn-md">Live Preview</a>
 
-                <a target="_blank" href="https://github.com/TacitReturn/Portfolio" type="button" class="btn btn-primary">Repository</a>
+                <a target="_blank" href="https://github.com/TacitReturn/Portfolio" type="button"
+                   class="btn btn-primary">Repository</a>
 
             </div>
 
         </div>
         <!-- Card -->
 
-{{--        <!-- Card -->--}}
-{{--        <div class="card mb-4">--}}
+        {{--        <!-- Card -->--}}
+        {{--        <div class="card mb-4">--}}
 
-{{--            <!--Card image-->--}}
-{{--            <div class="view overlay">--}}
-{{--                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/14.jpg"--}}
-{{--                     alt="Card image cap">--}}
-{{--                <a href="#!">--}}
-{{--                    <div class="mask rgba-white-slight"></div>--}}
-{{--                </a>--}}
-{{--            </div>--}}
+        {{--            <!--Card image-->--}}
+        {{--            <div class="view overlay">--}}
+        {{--                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/14.jpg"--}}
+        {{--                     alt="Card image cap">--}}
+        {{--                <a href="#!">--}}
+        {{--                    <div class="mask rgba-white-slight"></div>--}}
+        {{--                </a>--}}
+        {{--            </div>--}}
 
-{{--            <!--Card content-->--}}
-{{--            <div class="card-body">--}}
+        {{--            <!--Card content-->--}}
+        {{--            <div class="card-body">--}}
 
-{{--                <!--Title-->--}}
-{{--                <h4 class="card-title">Card title</h4>--}}
-{{--                <!--Text-->--}}
-{{--                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the--}}
-{{--                    card's--}}
-{{--                    content.</p>--}}
-{{--                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->--}}
-{{--                <button type="button" class="btn btn-light-blue btn-md">Read more</button>--}}
+        {{--                <!--Title-->--}}
+        {{--                <h4 class="card-title">Card title</h4>--}}
+        {{--                <!--Text-->--}}
+        {{--                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the--}}
+        {{--                    card's--}}
+        {{--                    content.</p>--}}
+        {{--                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->--}}
+        {{--                <button type="button" class="btn btn-light-blue btn-md">Read more</button>--}}
 
-{{--            </div>--}}
+        {{--            </div>--}}
 
-{{--        </div>--}}
-{{--        <!-- Card -->--}}
+        {{--        </div>--}}
+        {{--        <!-- Card -->--}}
 
-{{--        <!-- Card -->--}}
-{{--        <div class="card mb-4">--}}
+        {{--        <!-- Card -->--}}
+        {{--        <div class="card mb-4">--}}
 
-{{--            <!--Card image-->--}}
-{{--            <div class="view overlay">--}}
-{{--                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/15.jpg"--}}
-{{--                     alt="Card image cap">--}}
-{{--                <a href="#!">--}}
-{{--                    <div class="mask rgba-white-slight"></div>--}}
-{{--                </a>--}}
-{{--            </div>--}}
+        {{--            <!--Card image-->--}}
+        {{--            <div class="view overlay">--}}
+        {{--                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/15.jpg"--}}
+        {{--                     alt="Card image cap">--}}
+        {{--                <a href="#!">--}}
+        {{--                    <div class="mask rgba-white-slight"></div>--}}
+        {{--                </a>--}}
+        {{--            </div>--}}
 
-{{--            <!--Card content-->--}}
-{{--            <div class="card-body">--}}
+        {{--            <!--Card content-->--}}
+        {{--            <div class="card-body">--}}
 
-{{--                <!--Title-->--}}
-{{--                <h4 class="card-title">Card title</h4>--}}
-{{--                <!--Text-->--}}
-{{--                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the--}}
-{{--                    card's--}}
-{{--                    content.</p>--}}
-{{--                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->--}}
-{{--                <button type="button" class="btn btn-light-blue btn-md">Read more</button>--}}
+        {{--                <!--Title-->--}}
+        {{--                <h4 class="card-title">Card title</h4>--}}
+        {{--                <!--Text-->--}}
+        {{--                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the--}}
+        {{--                    card's--}}
+        {{--                    content.</p>--}}
+        {{--                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->--}}
+        {{--                <button type="button" class="btn btn-light-blue btn-md">Read more</button>--}}
 
-{{--            </div>--}}
+        {{--            </div>--}}
 
-{{--        </div>--}}
-{{--        <!-- Card -->--}}
+        {{--        </div>--}}
+        {{--        <!-- Card -->--}}
 
     </div>
     <!-- Card deck -->
