@@ -17,7 +17,6 @@ class PostsController extends Controller
         //
         $posts = Post::all();
 
-        return $posts;
     }
 
     /**
