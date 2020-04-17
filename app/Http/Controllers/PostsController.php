@@ -15,7 +15,9 @@ class PostsController extends Controller
     public function index()
     {
         //
-        return 123;
+        $posts = Post::all();
+
+        return $posts;
     }
 
     /**
