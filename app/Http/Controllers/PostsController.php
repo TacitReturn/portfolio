@@ -50,6 +50,8 @@ class PostsController extends Controller
     public function show(Post $post)
     {
         //
+        $post = Post::find();
+        dd($post);
     }
 
     /**
