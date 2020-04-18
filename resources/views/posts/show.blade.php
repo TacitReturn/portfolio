@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="card pt-2 pb-2">
+    <div class="card my-3">
         <div class="card-body">
             <h5 class="card-title">{{$post->title}}</h5>
             <small class="card-text">Posted On: {{$post->created_at }}</small>

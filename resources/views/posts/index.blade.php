@@ -14,6 +14,10 @@
                 </div>
             </div>
         @endforeach
+        {{$posts->links}}
+
+    @else
+        <p class="lead">No Posts Found!</p>
     @endif
 
 @endsection
