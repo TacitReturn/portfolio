@@ -50,7 +50,7 @@ class PostsController extends Controller
     public function show(Post $post)
     {
         //
-        dd($post);
+        return view('posts.show')->with('post', $post);
     }
 
     /**
