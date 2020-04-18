@@ -4,7 +4,7 @@
 
     @if(count($posts) > 0)
         @foreach($posts as $post)
-            <div class="card py-2">
+            <div class="card px-2">
                 <div class="card-body">
                     <h5 class="card-title">{{$post->title}}</h5>
                     <small class="card-text">Posted On: {{$post->created_at }}</small>
