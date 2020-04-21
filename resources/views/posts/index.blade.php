@@ -15,7 +15,7 @@
                 </span>
                             by
                             <span class="badge badge-pill badge-primary">
-                    {{ isset(Auth::user()->name) ? Auth::user()->name : null }}
+                    {{ isset(Auth::user()->name) ? Auth::user()->name : 'Must be signed in.' }}
                 </span>
                         </small>
                         <br/>
