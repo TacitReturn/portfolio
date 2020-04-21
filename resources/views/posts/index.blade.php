@@ -10,6 +10,7 @@
                         <h5 class="card-title">{{$post->title}}</h5>
                         <small class="card-text">
                             Posted on {{$post->created_at->format('jS F Y h:i:s A') }}
+                            <br />
                             by {{{ isset(Auth::user()->name) ? Auth::user()->name : null }}}
                         </small>
                         <br/>
