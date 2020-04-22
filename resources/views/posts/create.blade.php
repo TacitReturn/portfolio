@@ -43,7 +43,7 @@
                 </form>
 
                 <div class="text-center text-md-left">
-                    <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">
+                    <a class="btn btn-primary">
                         Create Post
                     </a>
                 </div>
