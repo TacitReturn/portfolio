@@ -14,7 +14,8 @@
                             </div>
                         @endif
 
-                        @if(count($posts > 0) )
+
+                        @if(count($posts) > 0)
                             @foreach($posts as $post)
                                 {{$post->title}}
                             @endforeach
