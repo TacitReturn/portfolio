@@ -19,7 +19,7 @@
                 </span>
                         </small>
                         <br/>
-                        <p class="card-text">{{$post->body }}</p>
+                        <p class="card-text">{{ str_limit($post->body, 50) }}</p>
                         <a href="/posts/{{$post->id}}" class="card-link">Read More..</a>
                         {{--                <a class="card-link">Another link</a>--}}
                     </div>
