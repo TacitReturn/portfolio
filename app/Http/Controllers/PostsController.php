@@ -54,7 +54,7 @@ class PostsController extends Controller
         $post->title = $request->input('title');
         $post->body = $request->input('body');
 
-        return redirect('posts.index');
+        return redirect('posts');
     }
 
     /**
