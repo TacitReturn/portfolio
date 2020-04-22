@@ -7,7 +7,7 @@
             @foreach($posts as $post)
                 <div class="card my-3">
                     <div class="card-body">
-                        <h5 class="card-title">{{$post->title}}</h5>
+                        <h4 class="card-title">{{$post->title}}</h4>
                         <small class="card-text">
                             Posted on:
                             <span class="badge badge-pill badge-primary">
