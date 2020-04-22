@@ -15,8 +15,8 @@
                         @endif
 
 
-                        @if(count($posts) > 0)
-                            @foreach($posts as $post)
+                        @if(count($user->posts) > 0)
+                            @foreach($user->posts as $post)
                                 {{$post->title}}
                             @endforeach
                         @endif
