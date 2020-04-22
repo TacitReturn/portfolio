@@ -39,14 +39,14 @@
                         </div>
                     </div>
                     <!--Grid row-->
-
+                    <div class="text-center text-md-left">
+                        <button type="submit" class="btn btn-primary">
+                            Create Post
+                        </button>
+                    </div>
                 </form>
 
-                <div class="text-center text-md-left">
-                    <button type="submit" class="btn btn-primary">
-                        Create Post
-                    </button>
-                </div>
+
                 <div class="status"></div>
             </div>
 
