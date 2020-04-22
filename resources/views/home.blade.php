@@ -13,13 +13,7 @@
                                 {{ session('status') }}
                             </div>
                         @endif
-
-
-                        @if(count($user->posts) > 0)
-                            @foreach($user->posts as $post)
-                                {{$post->title}}
-                            @endforeach
-                        @endif
+                        You're Logged In!
                     </div>
                 </div>
             </div>
