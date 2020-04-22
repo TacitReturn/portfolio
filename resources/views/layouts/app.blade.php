@@ -211,7 +211,7 @@
                                 <a class="dropdown-item" href="{{ route('home') }}">
                                     Dashboard
                                 </a>
-                                <a class="dropdown-item" href="{{ route('home') }}">
+                                <a class="dropdown-item" href="{{ route('posts/create') }}">
                                     Create Post
                                 </a>
                                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
