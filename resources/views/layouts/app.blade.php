@@ -211,6 +211,9 @@
                                 <a class="dropdown-item" href="{{ route('home') }}">
                                     Dashboard
                                 </a>
+                                <a class="dropdown-item" href="{{ route('home') }}">
+                                    My Posts
+                                </a>
                                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                     {{ __('Logout') }}
