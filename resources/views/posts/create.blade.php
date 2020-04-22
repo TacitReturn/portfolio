@@ -43,9 +43,9 @@
                 </form>
 
                 <div class="text-center text-md-left">
-                    <a class="btn btn-primary">
+                    <button type="submit" class="btn btn-primary">
                         Create Post
-                    </a>
+                    </button>
                 </div>
                 <div class="status"></div>
             </div>
