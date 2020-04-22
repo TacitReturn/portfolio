@@ -34,6 +34,7 @@ class PostsController extends Controller
     {
         //
 
+
         return view('posts.create');
     }
 
@@ -46,6 +47,12 @@ class PostsController extends Controller
     public function store(Request $request)
     {
         //
+        $this->validate(['title' => 'required', 'body' => 'required']);
+
+        $title = $request->input('title');
+        $body = $request->input('body');
+
+        return redirect('posts.index');
     }
 
     /**
