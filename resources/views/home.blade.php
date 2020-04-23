@@ -22,11 +22,13 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
+                            @foreach($posts as $post)
+                                <tr>
+                                    <td>{{$post->title}}</td>
+                                    <td>{{Str::limit($post->body, 10)}}</td>
+                                    <td>{{Auth::user()->name}}</td>
+                                </tr>
+                            @endforeach
                             </tbody>
                         </table>
                     </div>
