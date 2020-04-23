@@ -32,8 +32,10 @@
                                 @endforeach
                                 </tbody>
                             </table>
+                        @else
+                            <p class="lead">You have no posts.</p>
                         @endif
-                        <p class="lead">You have no posts.</p>
+
                     </div>
                 </div>
             </div>
