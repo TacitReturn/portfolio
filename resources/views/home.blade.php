@@ -13,24 +13,27 @@
                                 {{ session('status') }}
                             </div>
                         @endif
-                        <table class="table">
-                            <thead>
-                            <tr>
-                                <th scope="col">Title</th>
-                                <th scope="col">Body</th>
-                                <th scope="col">Author</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            @foreach($posts as $post)
+                        @if(count($posts > 0))
+                            <table class="table">
+                                <thead>
                                 <tr>
-                                    <td>{{$post->title}}</td>
-                                    <td>{{Str::limit($post->body, 10)}}</td>
-                                    <td>{{Auth::user()->name}}</td>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Body</th>
+                                    <th scope="col">Author</th>
                                 </tr>
-                            @endforeach
-                            </tbody>
-                        </table>
+                                </thead>
+                                <tbody>
+                                @foreach($posts as $post)
+                                    <tr>
+                                        <td>{{$post->title}}</td>
+                                        <td>{{Str::limit($post->body, 10)}}</td>
+                                        <td>{{Auth::user()->name}}</td>
+                                    </tr>
+                                @endforeach
+                                </tbody>
+                            </table>
+                        @endif
+                        <p class="lead">You have no posts.</p>
                     </div>
                 </div>
             </div>
