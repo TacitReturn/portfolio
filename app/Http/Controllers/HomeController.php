@@ -25,7 +25,7 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function index(Post $post)
     {
         $id = Auth::id();
         $user = User::find($id);
