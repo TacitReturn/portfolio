@@ -13,7 +13,7 @@
                                 {{ session('status') }}
                             </div>
                         @endif
-                        @if(count($posts > 0))
+                        @if(count($posts) > 0)
                             <table class="table">
                                 <thead>
                                 <tr>
