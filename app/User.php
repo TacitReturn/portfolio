@@ -41,6 +41,6 @@ class User extends Authenticatable
     protected $table = 'users';
 
     public function posts() {
-        return $this->hasMany('Post');
+        return $this->hasMany('App\Post');
     }
 }
