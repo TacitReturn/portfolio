@@ -17,9 +17,9 @@
                             <table class="table">
                                 <thead>
                                 <tr>
-                                    <th scope="col">Title</th>
-                                    <th scope="col">Body</th>
-                                    <th scope="col">Author</th>
+                                    <th scope="col">Post Title</th>
+                                    <th scope="col">Post Body</th>
+                                    <th scope="col">Post Author</th>
                                 </tr>
                                 </thead>
                                 <tbody>
