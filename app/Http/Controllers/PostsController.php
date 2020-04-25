@@ -97,7 +97,6 @@ class PostsController extends Controller
         $this->validate($request,
             ['title' => 'required', 'body' => 'required']);
 
-        $post = $request->post();
         $post->title = $request->input('title');
         $post->body = $request->input('body');
         $post->save();
