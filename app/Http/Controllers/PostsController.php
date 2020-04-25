@@ -58,7 +58,7 @@ class PostsController extends Controller
         $post->user_id = Auth::id();
         $post->save();
 
-        return redirect('posts');
+        return redirect('posts')->with('success', 'Post Created Successfully');
     }
 
     /**
