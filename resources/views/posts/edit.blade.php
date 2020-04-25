@@ -10,7 +10,7 @@
 
             <!--Grid column-->
             <div class="col-md-9 mb-md-0 mb-5">
-                <form id="contact-form" name="contact-form" action="/posts/{{$post->id}}">
+                <form id="contact-form" name="contact-form" action="/posts/update/{{$post->id}}">
                 @method('PUT')
                 @csrf
                 <!--Grid row-->
@@ -20,7 +20,7 @@
                         <div class="col-md-6">
                             <div class="md-form mb-0">
                                 <input type="text" id="title" name="title" class="form-control"
-                                       value="{{old('title')}}">
+                                       placeholder="{{$post->title}}">
                                 <label for="title" class="">Title</label>
                             </div>
                         </div>
@@ -35,7 +35,7 @@
                             <div class="md-form">
                             <textarea type="text" id="body" name="body" rows="2"
                                       class="form-control md-textarea">
-                                {{old('body')}}
+                                {{$post->body}}
                             </textarea>
                                 <label for="message">Post Content</label>
                             </div>

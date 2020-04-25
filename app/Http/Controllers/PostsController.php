@@ -82,7 +82,7 @@ class PostsController extends Controller
     {
         //
 
-        return view('posts/edit')->with('post', $post);
+        return view('posts.edit')->with('post', $post);
     }
 
     /**
