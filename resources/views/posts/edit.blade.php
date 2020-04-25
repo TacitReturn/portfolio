@@ -49,7 +49,6 @@
                     </div>
                 </form>
 
-
                 <div class="status"></div>
             </div>
 
