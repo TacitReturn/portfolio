@@ -43,9 +43,9 @@
                     </div>
                     <!--Grid row-->
                     <div class="text-center text-md-left">
-                        <button type="submit" class="btn btn-primary">
+                        <a type="submit" class="btn btn-primary">
                             Update Post
-                        </button>
+                        </a>
                     </div>
                 </form>
 
