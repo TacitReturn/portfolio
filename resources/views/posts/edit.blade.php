@@ -10,7 +10,7 @@
 
             <!--Grid column-->
             <div class="col-md-9 mb-md-0 mb-5">
-                <form id="contact-form" name="contact-form" action="/posts/{{$post->id}}/update">
+                <form id="contact-form" name="contact-form" action="{{route('posts.update', $post->id)}}" method="POST">
                 @method('PUT')
                 @csrf
                 <!--Grid row-->
