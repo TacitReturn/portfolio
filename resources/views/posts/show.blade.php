@@ -18,13 +18,15 @@
             <p class="card-text">{{$post->body }}</p>
 
             @if(!Auth::guest())
-                <a href="/posts/{{$post->id}}/edit" class="card-link btn btn-primary">Edit Post</a>
+                @if(Auth::user()->id == $post->user_id)
+                    <a href="/posts/{{$post->id}}/edit" class="card-link btn btn-primary">Edit Post</a>
 
-                <form action="/posts/{{$post->id}}" method="POST">
-                    @csrf
-                    @method('DELETE')
-                    <button type="submit" class="card-link btn btn-danger">Delete Post</button>
-                </form>
+                    <form action="/posts/{{$post->id}}" method="POST">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="card-link btn btn-danger">Delete Post</button>
+                    </form>
+                @endif
             @endif
         </div>
     </div>
