@@ -92,11 +92,11 @@ class PostsController extends Controller
      * @param \App\Post $post
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Post $post)
+    public function update(Request $request, Post $post, $id)
     {
         $this->validate($request,
             ['title' => 'required', 'body' => 'required']);
-        $post = $request->post();
+        $post = Post::find($id);
         $post->title = $request->input('title');
         $post->body = $request->input('body');
         $post->save();
