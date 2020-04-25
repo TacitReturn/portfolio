@@ -17,6 +17,10 @@
             </small>
             <p class="card-text">{{$post->body }}</p>
             <a href="/posts/{{$post->id}}/edit" class="card-link">Edit Post</a>
+            <form action="/posts/{{$post->id}}">
+                <button class="card-link">Delete Post</button>
+            </form>
+
         </div>
     </div>
 @endsection
