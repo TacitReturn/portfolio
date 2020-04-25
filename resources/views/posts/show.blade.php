@@ -17,7 +17,7 @@
             </small>
             <p class="card-text">{{$post->body }}</p>
 
-            @if(!Autth::guest())
+            @if(!Auth::guest())
                 <a href="/posts/{{$post->id}}/edit" class="card-link btn btn-primary">Edit Post</a>
 
                 <form action="/posts/{{$post->id}}" method="POST">
