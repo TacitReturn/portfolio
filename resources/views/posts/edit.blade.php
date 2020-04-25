@@ -20,7 +20,7 @@
                         <div class="col-md-6">
                             <div class="md-form mb-0">
                                 <input type="text" id="title" name="title" class="form-control"
-                                       placeholder="{{$post->title}}">
+                                       value="{{$post->title}}">
                                 <label for="title" class="">Title</label>
                             </div>
                         </div>
