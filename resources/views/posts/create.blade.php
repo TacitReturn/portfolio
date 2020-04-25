@@ -18,7 +18,7 @@
                         <!--Grid column-->
                         <div class="col-md-6">
                             <div class="md-form mb-0">
-                                <input type="text" id="title" name="title" class="form-control">
+                                <input type="text" id="title" name="title" class="form-control" value="{{old('title')}}">
                                 <label for="title" class="">Title</label>
                             </div>
                         </div>
@@ -32,7 +32,9 @@
 
                             <div class="md-form">
                             <textarea type="text" id="body" name="body" rows="2"
-                                      class="form-control md-textarea"></textarea>
+                                      class="form-control md-textarea">
+                                {{old('body')}}
+                            </textarea>
                                 <label for="message">Post Content</label>
                             </div>
 
