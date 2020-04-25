@@ -96,12 +96,8 @@ class PostsController extends Controller
     {
         $this->validate($request,
             ['title' => 'required', 'body' => 'required']);
-        $post = Post::find(1);
-        $post->title = $request->input('title');
-        $post->body = $request->input('body');
-        $post->save();
-
-        return redirect('/posts')->with('success', 'Post Updated');
+        $post->update($request->all());
+        return redirect('posts.index')->with('success', 'Post Updated');
 
     }
 
