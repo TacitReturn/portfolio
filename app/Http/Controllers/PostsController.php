@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 
 class PostsController extends Controller
 {
+    protected $guarded = [];
     public function __construct()
     {
         $this->middleware('auth')->except(['index', 'show']);
