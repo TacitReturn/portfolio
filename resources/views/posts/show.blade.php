@@ -21,7 +21,7 @@
             <form action="/posts/{{$post->id}}" method="POST">
                 @csrf
                 @method('DELETE')
-                <a type="submit" class="card-link btn btn-danger">Delete Post</a>
+                <button type="submit" class="card-link btn btn-danger">Delete Post</button>
             </form>
 
         </div>
