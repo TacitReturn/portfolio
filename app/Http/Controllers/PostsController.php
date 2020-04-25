@@ -81,6 +81,7 @@ class PostsController extends Controller
     public function edit(Post $post)
     {
         //
+        return view('posts.edit');
     }
 
     /**
@@ -92,7 +93,16 @@ class PostsController extends Controller
      */
     public function update(Request $request, Post $post)
     {
-        //
+        $this->validate($request,
+            ['title' => 'required', 'body' => 'required']);
+
+        $post = $request->post();
+        $post->title = $request->input('title');
+        $post->body = $request->input('body');
+        $post->save();
+
+        return redirect('posts');
+
     }
 
     /**
