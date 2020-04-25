@@ -16,7 +16,7 @@
 
             </small>
             <p class="card-text">{{$post->body }}</p>
-            <a href="/posts/{{$post->id}}/edit" class="card-link">Edit Post</a>
+            <a href="/posts/{{$post->id}}/edit" class="card-link btn btn-primary">Edit Post</a>
             <form action="/posts/{{$post->id}}" method="POST">
                 @csrf
                 @method('DELETE')
