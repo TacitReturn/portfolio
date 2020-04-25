@@ -16,7 +16,7 @@
 
             </small>
             <p class="card-text">{{$post->body }}</p>
-            {{--                <a class="card-link">Another link</a>--}}
+            <a href="/posts/{{$post->id}}/edit" class="card-link">Edit Post</a>
         </div>
     </div>
 @endsection
