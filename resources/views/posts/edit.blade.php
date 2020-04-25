@@ -11,8 +11,8 @@
             <!--Grid column-->
             <div class="col-md-9 mb-md-0 mb-5">
                 <form id="contact-form" name="contact-form" action="{{route('posts.update', $post->id)}}" method="POST">
-                @method('PUT')
                 @csrf
+                @method('PUT')
                 <!--Grid row-->
                     <div class="row">
 
@@ -43,9 +43,9 @@
                     </div>
                     <!--Grid row-->
                     <div class="text-center text-md-left">
-                        <a type="submit" class="btn btn-primary">
+                        <button type="submit" class="btn btn-primary">
                             Update Post
-                        </a>
+                        </button>
                     </div>
                 </form>
 
