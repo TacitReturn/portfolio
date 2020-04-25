@@ -20,7 +20,7 @@
             <form action="/posts/{{$post->id}}" method="POST">
                 @csrf
                 @method('DELETE')
-                <a type="submit" class="card-link">Delete Post</a>
+                <a type="submit" class="card-link btn btn-danger">Delete Post</a>
             </form>
 
         </div>
