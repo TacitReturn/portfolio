@@ -17,14 +17,12 @@
             </small>
             <p class="card-text">{{$post->body }}</p>
             <a href="/posts/{{$post->id}}/edit" class="card-link btn btn-primary">Edit Post</a>
-            <span>
-                          <form action="/posts/{{$post->id}}" method="POST">
+
+            <form action="/posts/{{$post->id}}" method="POST">
                 @csrf
-                              @method('DELETE')
+                @method('DELETE')
                 <a type="submit" class="card-link btn btn-danger">Delete Post</a>
             </form>
-            </span>
-
 
         </div>
     </div>
