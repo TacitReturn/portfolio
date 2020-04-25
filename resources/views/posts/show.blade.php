@@ -16,7 +16,8 @@
 
             </small>
             <p class="card-text">{{$post->body }}</p>
-            @auth()
+
+            @if(!Autth::guest())
                 <a href="/posts/{{$post->id}}/edit" class="card-link btn btn-primary">Edit Post</a>
 
                 <form action="/posts/{{$post->id}}" method="POST">
@@ -24,8 +25,7 @@
                     @method('DELETE')
                     <button type="submit" class="card-link btn btn-danger">Delete Post</button>
                 </form>
-            @endauth
-
+            @endif
         </div>
     </div>
 @endsection
