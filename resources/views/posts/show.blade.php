@@ -10,10 +10,12 @@
                     {{$post->created_at->format('jS F Y h:i:s A') }}
                 </span>
                 by:
-                <span class="badge badge-pill badge-primary">
-{{--                    {{ isset(Auth::user()->name) ? Auth::user()->name : 'Must be signed in.' }}--}}
-                    {{$post->user->name}}
+                @if(Auth::user()->id == $post->user_id)
+                    <span class="badge badge-pill badge-primary">
+                    {{ isset(Auth::user()->name) ? Auth::user()->name : 'Must be signed in.' }}
                 </span>
+                @endif
+
 
             </small>
             <p class="card-text">{{$post->body }}</p>
