@@ -115,6 +115,11 @@ class PostsController extends Controller
     public function destroy(Post $post)
     {
         //
+
+        // Check for correct user
+        if (Auth::id() !== $post->user_id) {
+            return view('pages.index')->with('error', "You're not authorized to delete this post");
+        }
         $post->delete();
 
         return redirect('/posts')->with('success', 'Post Deleted');
