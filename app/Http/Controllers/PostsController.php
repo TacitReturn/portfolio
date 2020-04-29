@@ -70,6 +70,7 @@ class PostsController extends Controller
     public function show(Post $post)
     {
         //
+        $posts = Post::with('user')->get();
         return view('posts.show')->with('post', $post);
     }
 
