@@ -84,7 +84,7 @@ class PostsController extends Controller
     {
         //
         // Check for correct user
-        if (auth()->user()->id !== $post->user_id) {
+        if (Auth::id() !== $post->user_id) {
             return view('posts.index')->with('error', 'Unautherized Page');
         }
         return view('posts.edit')->with('post', $post);
