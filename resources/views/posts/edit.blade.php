@@ -42,7 +42,7 @@
                         </div>
                     </div>
                     <!--Grid row-->
-                    <div class="text-center text-md-left">
+                    <div class="btn-group btn-group-lg">
                         <button type="submit" class="btn btn-primary">
                             Update Post
                         </button>
