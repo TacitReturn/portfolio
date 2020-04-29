@@ -83,7 +83,10 @@ class PostsController extends Controller
     public function edit(Post $post)
     {
         //
-
+        // Check for correct user
+        if (auth()->user()->id !== $post->user_id) {
+            return view('/posts')->with('error', 'Unautherized Page');
+        }
         return view('posts.edit')->with('post', $post);
     }
 
