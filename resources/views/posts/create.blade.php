@@ -18,7 +18,8 @@
                         <!--Grid column-->
                         <div class="col-md-6">
                             <div class="md-form mb-0">
-                                <input type="text" id="title" name="title" class="form-control" value="{{old('title')}}">
+                                <input type="text" id="title" name="title" class="form-control"
+                                       value="{{old('title')}}">
                                 <label for="title" class="">Title</label>
                             </div>
                         </div>
@@ -31,11 +32,13 @@
                         <div class="col-md-12">
 
                             <div class="md-form">
-                            <textarea id="mytextarea" type="text" id="body" name="body" rows="2"
-                                      class="form-control md-textarea">
+                                <label for="message">Post Content</label>
+                                <br />
+                                <textarea id="mytextarea" type="text" id="body" name="body" rows="2"
+                                          class="form-control md-textarea">
                                 {{old('body')}}
                             </textarea>
-                                <label for="message">Post Content</label>
+
                             </div>
 
                         </div>
