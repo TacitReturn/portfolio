@@ -33,10 +33,10 @@
 
                             <div class="md-form">
                                 <label for="message">Post Content</label>
-                                <br />
+                                <br/>
                                 <textarea id="mytextarea" type="text" id="body" name="body" rows="2"
-                                          class="form-control md-textarea">
-                                {{old('body')}}
+                                          class="form-control md-textarea">{!!$post->body !!}
+                                    {{old('body')}}
                             </textarea>
 
                             </div>
