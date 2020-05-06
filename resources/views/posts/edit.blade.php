@@ -36,7 +36,7 @@
                             <div class="col-md-12">
 
                                 <div class="md-form">
-                            <textarea type="text" id="body" name="body" rows="2"
+                            <textarea id="mytextarea" type="text" id="body" name="body" rows="2"
                                       class="form-control md-textarea">{{$post->body}}
                             </textarea>
                                     <label for="message">Post Content</label>
