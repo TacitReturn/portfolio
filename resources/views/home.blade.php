@@ -26,7 +26,7 @@
                                 @foreach($posts as $post)
                                     <tr>
                                         <td>{{$post->title}}</td>
-                                        <td>{{Str::limit($post->body, 10)}}</td>
+                                        <td>{!! Str::limit($post->body, 10) !!}</td>
                                         <td>{{Auth::user()->name}}</td>
                                     </tr>
                                 @endforeach
