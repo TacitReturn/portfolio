@@ -16,7 +16,7 @@
                 </span>
 
                 </small>
-                <p class="card-text">{{$post->body }}</p>
+                <p class="card-text">{!! $post->body !!}}</p>
                 <div class="row">
                     @if(!Auth::guest())
                         @if(Auth::user()->id == $post->user_id)
